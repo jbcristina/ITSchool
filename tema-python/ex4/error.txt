@@ -1,0 +1,8 @@
+https://httpstat.us/201 - Status Code: 502
+https://httpstat.us/400 - Status Code: 502
+https://httpstat.us/500 - Status Code: 504
+https://httpstat.us/404 - Status Code: 502
+https://httpstat.us/201 - Status Code: 502
+https://httpstat.us/503 - Status Code: 504
+https://httpstat.us/200 - Status Code: 504
+https://httpstat.us/303 - Status Code: 504
