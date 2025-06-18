@@ -28,5 +28,5 @@ while True:
         except Exception as e:
             print(f"[EROARE] Nu s-a putut porni procesul: {e}")
     
-    # Așteaptă câteva secunde înainte de o nouă verificare
+    # Așteaptă 5 secunde înainte de o nouă verificare
     time.sleep(5)

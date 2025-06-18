@@ -6,11 +6,20 @@
 #   ● Rulați programul cu mai multe valori și verificati ca face ce trebuie.
 
 import os
+import sys
+
+# Verificam daca variabila de mediu a fost setata
+parola_secreta = os.getenv("PAROLA_SECRETA")
+print(f"Parola secreta este: {parola_secreta}")
+if not parola_secreta:
+    print("Variabila de mediu nu a fost setata")
+    sys.exit(1)
+
 # Citirea variabilei de la utilizator
 parola = input("Introduceți parola: ")
 
 # Verificarea parolei
-if parola == os.getenv("PAROLA_SECRETA"):
+if parola == parola_secreta:
     print("Parola corecta")
 else:
     print("Parola gresita") 

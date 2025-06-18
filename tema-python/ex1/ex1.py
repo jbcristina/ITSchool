@@ -34,14 +34,14 @@ print(f"Variabila tuple_var este de tipul {type(tuple_var)} si are valoarea: {tu
 
 # Crearea documentației
 documentatie = f"""
-Variabila string_var este de tipul {type(string_var)} si are valoarea: {string_var}
-Variabila number_var este de tipul {type(number_var)} si are valoarea: {number_var}
-Variabila boolean_var este de tipul {type(boolean_var)} si are valoarea: {boolean_var}
-Variabila none_var este de tipul {type(none_var)} si are valoarea: {none_var}
-Variabila list_var este de tipul {type(list_var)} si are valoarea: {list_var}
-Variabila set_var este de tipul {type(set_var)} si are valoarea: {set_var}
-Variabila dict_var este de tipul {type(dict_var)} si are valoarea: {dict_var}
-Variabila tuple_var este de tipul {type(tuple_var)} si are valoarea: {tuple_var}
+Variabila string_var este de tipul {type(string_var).__name__} si are valoarea: {string_var}
+Variabila number_var este de tipul {type(number_var).__name__} si are valoarea: {number_var}
+Variabila boolean_var este de tipul {type(boolean_var).__name__} si are valoarea: {boolean_var}
+Variabila none_var este de tipul {type(none_var).__name__} si are valoarea: {none_var}
+Variabila list_var este de tipul {type(list_var).__name__} si are valoarea: {list_var}
+Variabila set_var este de tipul {type(set_var).__name__} si are valoarea: {set_var}
+Variabila dict_var este de tipul {type(dict_var).__name__} si are valoarea: {dict_var}
+Variabila tuple_var este de tipul {type(tuple_var).__name__} si are valoarea: {tuple_var}
 """ 
 # Afișarea documentației
 print(f"Variabila documentatie: {documentatie}")

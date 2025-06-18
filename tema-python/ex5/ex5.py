@@ -5,9 +5,18 @@
 #   2. Verifică dacă linia conține cuvântul ERROR.
 #   3. Afișează linia și numărul acesteia dacă conține ERROR.
 
-with open('logs.txt', 'r') as file:
-    for line_number, line in enumerate(file, start=1):
-        if 'ERROR' in line:
-            print(f"Line {line_number}: {line.strip()}")
+import os
+import sys
+
+if not os.path.exists("logs.txt"):
+    print(f"Fisierul logs.txt nu exista.")
+    print(f"Creati intai fisierul logs.txt")
+    sys.exit(1)
+else:
+    with open('logs.txt', 'r') as file:
+        for line_number, line in enumerate(file, start=1):
+            if 'ERROR' in line:
+                print(f"Line {line_number}: {line.strip()}")
+
 # Afișăm un mesaj de finalizare:
 print("Processing complete.")
