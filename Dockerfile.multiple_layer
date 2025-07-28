@@ -1,0 +1,7 @@
+FROM ubuntu
+
+COPY layer2.txt layer.txt
+
+COPY layer3.txt layer.txt
+
+
