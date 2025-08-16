@@ -1,0 +1,17 @@
+# compose.yml
+
+name: ex4  
+
+services:        
+  server_web:  
+    image: server_web_img 
+    container_name: server_web_container  
+    ports:         
+      - "6060:8000"
+    environment:   
+      - APP_HOST=0.0.0.0
+      - APP_PORT=8000
+    build:
+      context: .
+
+

@@ -1,0 +1,39 @@
+# compose.yml
+
+name: ex3  
+
+services:        
+  exercitiul3_1:  
+    image: alpine 
+    container_name: c1 
+    command: sh -c " echo Hello from c1 > /logs/log.txt && sleep Infinity"
+    volumes:       
+      - my-vol:/logs
+    restart: always 
+    networks:      
+      - my-net
+  exwercitiul3_2:
+    image: alpine 
+    container_name: c2 
+    command: sh -c " ping c1 >> /logs/log.txt && sleep Infinity"
+    volumes:       
+      - my-vol:/logs
+    restart: always 
+    networks:      
+      - my-net
+
+  exercitiul3_3:
+    image: nginx 
+    container_name: webserver 
+    ports:
+      - "8080:80"
+    volumes:       
+      - my-vol:/usr/share/nginx/html/
+    restart: always 
+
+networks:
+  my-net: {}
+
+volumes:
+ my-vol:
+  name: "my-vol"

@@ -1,0 +1,6 @@
+name: ubuntu-vim
+
+services:
+  tool:
+    build: .
+    command: sh -c "echo Andrei && sleep Infinity"

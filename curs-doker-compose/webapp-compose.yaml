@@ -1,0 +1,23 @@
+name: webapp
+
+services:
+  frontend:
+    image: alpine
+    command: sh -c "sleep Infinity"
+    networks:
+      - public
+  backend:
+    image: alpine
+    command: sh -c "sleep Infinity"
+    networks:
+      - public
+      - private
+  database:
+    image: alpine
+    command: sh -c "sleep Infinity"
+    networks:
+      - private
+
+networks:
+  private: {"internal": true}
+  public: {}

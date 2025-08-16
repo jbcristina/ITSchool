@@ -1,0 +1,10 @@
+2025-06-23 19:55:46,497 - DEBUG - Acesta este un mesaj de debug
+2025-06-23 19:55:46,497 - INFO - Acesta este un mesaj de info
+2025-06-23 19:55:46,498 - WARNING - Acesta este un mesaj de warning
+2025-06-23 19:55:46,498 - ERROR - Acesta este un mesaj de error
+2025-07-13 22:05:39,733 - INFO - Salut din docker
+2025-07-13 22:05:40,769 - INFO - Salut din docker
+2025-07-13 22:05:41,771 - INFO - Salut din docker
+2025-07-13 22:05:42,773 - INFO - Salut din docker
+2025-07-13 22:05:43,785 - INFO - Salut din docker
+2025-07-13 22:05:44,797 - INFO - Salut din docker
