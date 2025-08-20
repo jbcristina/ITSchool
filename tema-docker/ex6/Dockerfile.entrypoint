@@ -1,0 +1,4 @@
+FROM ubuntu:20.04
+
+ENTRYPOINT ["echo"]
+# This Dockerfile sets up a simple Ubuntu container that echoes a message.
