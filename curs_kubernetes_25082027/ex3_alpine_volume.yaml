@@ -1,0 +1,35 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  creationTimestamp: null
+  labels:
+    run: alpine
+    location: local-host
+  name: alpine-pod
+spec:
+  containers:
+  - command:
+    - sh 
+    - /tmp/scripts/hello.sh
+    image: alpine
+    name: alpine-container-scrie
+    volumeMounts:
+    - mountPath: /logs
+      name: loguri
+    - mountPath: /tmp/scripts/
+      name: scripts
+  - command:
+    - sh 
+    - -c 
+    - tail -f /logs/log.txt
+    image: alpine
+    name: alpine-container-citeste
+    volumeMounts:
+    - mountPath: /logs
+      name: loguri
+  volumes:
+  - name: loguri
+    emptyDir: {}
+  - name: scripts
+    hostPath:
+      path: /tmp/scripts/
